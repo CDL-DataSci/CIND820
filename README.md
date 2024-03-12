@@ -9,5 +9,17 @@ The literature review of past research has highlighted the importance of a using
 Original Data Source: https://www.ourcommons.ca/documentviewer/en/37-1/house/hansard-index
 
 ## Step 2: Initial Results
-The initial results expored the LDA, HDP and BERTopic Models on a sample of the full dataset. 
+The initial results expored the LDA, HDP and BERTopic Models on a sample of the full dataset. The initial results are divided between the following jupyter notebook files:
+* Initial_Results_CreateSample: documenting how two sample sizes were identified that randomly selected files from the full dataset
+* Initial_Results_HDP_LDA_Models: Inital exploration of the algothrims for LDA and HDP topic models using a sample size of 25 files. The objectives were to test the general performance of the models in a time efficent manner.
+* Initial_Results_HDP_LDA_Models_Sample385: The same code was run a statistically significant sameple size of 385 files out of the full 1972 pdfs from the dataset.
+* Initial_Results_BERTopic: Initial assessment of the BERTopic model was limited due to the processing capacity and potential combatability conflicts with running the BERTopic on an Apple M1 processor.
+
+Additionally, the source data for initial results can be found in the following folders:
+* Dataset_Sample: 25 file sample that was leveraged by the LDA and HDP models
+* Dataset_Sample_385: the larger sample of files that was leveraged by the LDA and HDp models
+* Dataset_BERTopic: the limited dataset used to run the BERTopic model
+
+Summary of Findings in Initial Results:
+
 
