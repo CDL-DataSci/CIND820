@@ -32,16 +32,8 @@ The inital assessment of the model performance produced the following overal coh
 * LDA had an overall coherance value of 0.383 for 7 topics
 * HDP had an overall coherance value of 0.502 for 18 topics
 
-The coherance values were further assesses on a topic level, generating the following tables:
-
-LDA Coherance Values:
-![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/6cabf32b-8741-4a7a-8d23-ce098e742c46)
-
-HDP Coherance Values:
-![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/16dca90c-a789-4522-8f5c-10a7a93acb10)
-
 **Assessment of Topic Keywords**
-Reviewing the outputs for each identified topic highlighted the differences between LDA and HDP being able to identify clearly distinct topics. For example, at first review of the LDA topics, it is noted that there were a least three very distinct topics out of the 7 identified.
+Reviewing the outputs for each identified topic highlighted the differences between LDA and HDP being able to identify clearly distinct topics. For example, at first review of the LDA topics, it is noted that there were a least three very distinct topics out of the 7 identified, which was further confirmed when isolating for re.
 
 LDA Topic Keywords:
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/ec5e8cb1-20f7-4f26-97e7-8118797a5807)
