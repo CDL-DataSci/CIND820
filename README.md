@@ -19,7 +19,7 @@ The initial results expored the LDA, HDP and BERTopic Models on a sample of the 
 
 Additionally, the source data for initial results can be found in the following folders:
 * **Dataset_Sample**: 25 file sample that was leveraged by the LDA and HDP models
-* **Dataset_Sample_385**: the larger sample of files that was leveraged by the LDA and HDp models
+* **Dataset_Sample_385**: the larger sample of files that was leveraged by the LDA and HDP models
 * **Dataset_BERTopic**: the limited dataset used to run the BERTopic model
 
 ### Summary of Findings in Initial Results:
