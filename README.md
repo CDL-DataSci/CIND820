@@ -21,6 +21,24 @@ Additionally, the source data for initial results can be found in the following 
 * Dataset_BERTopic: the limited dataset used to run the BERTopic model
 
 ### Summary of Findings in Initial Results:
+Leverating the outcomes from the Literature Reivew and exploratory analysis of the dataset, it was determined that the ideal number of topics for the LDA model was 7. This value will be carried forward into the analysis of the sample size of 25 and 385 files in order to compare the LDA and HDP models. Contrasting with the HDP model, when training this algorithm on the dataset (sample 25), a total of 18 topics were identified.
+
+Also improving on the literature review was updating the processing of the text mining outputs to allow for crossvalidation of a training and test set (80/20 split). The LDA model was further enhanced by updating the parameters to increase the number of passes over the corpus to 10 passes.
+
+### Coherance values of LDA and HDA models
+The inital assessment of the model performance produced the following overal coherance values:
+* LDA had an overall coherance value of 0.383 for 7 topics
+* HDP had an overall coherance value of 0.455 for 18 topics
+
+The coherance values were further assesses on a topic level, generating the following tables:
+
+LDA Coherance Values:
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/6cabf32b-8741-4a7a-8d23-ce098e742c46)
+
+HDP Coherance Values:
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/16dca90c-a789-4522-8f5c-10a7a93acb10)
+
+
 As supported by the literature review, the LDA model produced topics that were more clearly defined than that HDP model, as demonstrated by the Intertopic Distance Model Map When comparing the two maps (seen below), the results imply that the HDP model is characterized by high dimensonality, weak topic differenatation and similar topic content.
 
 LDA Intertopic Distance Map & Top Relevant Keywords Per Topic (Sample 25)
