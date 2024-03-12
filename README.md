@@ -55,6 +55,7 @@ LDA Model Outputs:
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/8da26b7a-6e15-45dd-ab3b-07f6d04a45d0)
 
 HDP Model Outputs:
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/e69a5bcd-85a8-4f15-b073-c9d45b888b2e)
 
 
 As supported by the literature review, the LDA model produced topics that were more clearly defined than that HDP model, as demonstrated by the Intertopic Distance Model Map When comparing the two maps (seen below), the results imply that the HDP model is characterized by high dimensonality, weak topic differenatation and similar topic content.
