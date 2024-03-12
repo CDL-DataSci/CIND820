@@ -3,7 +3,7 @@ TMU CIND820 Capstone Project - Parliament of Canada Hansard Debate Records (2006
 
 This project is aims to explore what information can be gained through applying text mining and topic modeling approaches to the historical Hansard debate records from the Parliament of Canada. The identified dataset covers from 2006 to 2023 (39-1 Parliment to part of 44-1). The data set includes 1972 pdf files in total and collectively represent 155,385 pages.
 
-The initial results of the comparative analysis between LDA and HDP models show that while HDP has greater flexibility in processing a corpus of text including not requiring defining total topics upfront, the outputs of the LDA model continue to produce topics that can be easily interpreted as distinct. However, the HDP model was able to identify a greater diversity of keywords within each topic that potentially would allow for a more nuanced assessment of changes in topic keywords across different timescales of either parliament sessions or calendar years. In terms of coherance values, the HDP model was able to produce higher results. 
+The initial results of the comparative analysis between LDA and HDP models show that while HDP has greater flexibility in processing a corpus of text including not requiring defining total topics upfront, the outputs of the LDA model continue to produce topics that can be easily interpreted as distinct. However, the HDP model was able to identify a greater diversity of keywords within each topic that potentially would allow for a more nuanced assessment of changes in topic keywords across different timescales of either parliament sessions or calendar years. In terms of coherance values, the HDP model was able to produce higher results (0.383 for LDA and 0.502 for HDP). 
 
 ## Step 1: Literature Review
 The literature review of past research has highlighted the importance of a using a systematic approach to text mining techniques, the benefits of leveraging a combined topic model from LDA and TF-IDF, as well as considerations for evaluation of topic models and the validation of the labels for the extract topic. The literature review also helped to identify comparable alternatives to LDA that include HDP and the more recent BERTopic. While the literature review has identified possible advantages for these alternative topic models, there is a potential for these alternatives to be more computationally intensive and the performance of these different modeal will be explored in the final report. 
@@ -30,7 +30,7 @@ Also improving on the literature review was updating the processing of the text 
 **Coherance values of LDA and HDA models**
 The inital assessment of the model performance produced the following overal coherance values:
 * LDA had an overall coherance value of 0.383 for 7 topics
-* HDP had an overall coherance value of 0.455 for 18 topics
+* HDP had an overall coherance value of 0.502 for 18 topics
 
 The coherance values were further assesses on a topic level, generating the following tables:
 
