@@ -7,6 +7,8 @@ The initial results of the comparative analysis between LDA and HDP models show 
 * For the sample size of 25, the HDP model was able to produce higher result (0.410 for LDA and 0.458 for HDP)
 * For the sample size of 385, the LDA model was able to produce a higher result (0.702 for LDA and 0.323 for HDP)
 
+With respect to the BERTopic model, processing limiations and capacity issues were encounterd which restricted assessing the performance of this model against that of LDA and HDP. The constrainst of utilizing this model for the initial results have been documented below.
+
 ## Step 1: Literature Review
 The literature review of past research has highlighted the importance of a using a systematic approach to text mining techniques, the benefits of leveraging a combined topic model from LDA and TF-IDF, as well as considerations for evaluation of topic models and the validation of the labels for the extract topic. The literature review also helped to identify comparable alternatives to LDA that include HDP and the more recent BERTopic. While the literature review has identified possible advantages for these alternative topic models, there is a potential for these alternatives to be more computationally intensive and the performance of these different modeal will be explored in the final report. 
 
@@ -74,6 +76,15 @@ LDA Intertopic Distance Map & Top Relevant Keywords Per Topic (Sample 25)
 HDP Intertopic Distance Map & Top Relevant Keywords Per Topic (Sample 25)
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/4e18bf84-a103-40e6-a743-c0686942126e)
 
+## Analysis Constraints:
+
+Challenges with running the BERTopic model have typically resulted in the jyputer notebook kernel warnings that the kernel is dead and with be restarted. Error may relate to the Apple M1 processor (8 cores) and compability issues with not having ability to run the script in parallel through the GPU. Otherwise, it could be limitations of the memory and processing capacity of the laptop currently being utilized.
+
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/0a6d7e2d-0f9e-4bb3-a316-84f2af2c78a6)
+
+Attempts to update and reinstall the python packages to resolve dependencies, such as transfomer package, through pip and conda have not been successful. Additionally, attempts to leverage the tensorflow package to be able to leverage the GPU in parallel to the CPU as a workaround for the Apple M1 chip have not yeilded resutls. 
+
+Next steps inlcude further attempts to resolve the error BERTopic kernel terminating permaturely while running on current laptop. Alternatives would be to source a Windows terminal with sufficient processor and memory capacity to determine if this will resolve the obstacle. 
 
 
 
