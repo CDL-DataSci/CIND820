@@ -10,7 +10,7 @@ Original Data Source: https://www.ourcommons.ca/documentviewer/en/37-1/house/han
 
 ## Step 2: Initial Results
 The initial results expored the LDA, HDP and BERTopic Models on a sample of the full dataset. The initial results are divided between the following jupyter notebook files:
-* Initial_Results_CreateSample: documenting how two sample sizes were identified that randomly selected files from the full dataset
+* <u>Initial_Results_CreateSample</u>: documenting how two sample sizes were identified that randomly selected files from the full dataset
 * Initial_Results_HDP_LDA_Models: Inital exploration of the algothrims for LDA and HDP topic models using a sample size of 25 files. The objectives were to test the general performance of the models in a time efficent manner.
 * Initial_Results_HDP_LDA_Models_Sample385: The same code was run a statistically significant sameple size of 385 files out of the full 1972 pdfs from the dataset.
 * Initial_Results_BERTopic: Initial assessment of the BERTopic model was limited due to the processing capacity and potential combatability conflicts with running the BERTopic on an Apple M1 processor.
