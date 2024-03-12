@@ -20,9 +20,15 @@ Additionally, the source data for initial results can be found in the following 
 * Dataset_Sample_385: the larger sample of files that was leveraged by the LDA and HDp models
 * Dataset_BERTopic: the limited dataset used to run the BERTopic model
 
-Summary of Findings in Initial Results:
-As supported by the literature review, the LDA model produced topics that were more clearly defined than that HDP model. 
+###Summary of Findings in Initial Results:
+As supported by the literature review, the LDA model produced topics that were more clearly defined than that HDP model, as demonstrated by the Intertopic Distance Model Map When comparing the two maps (seen below), the results imply that the HDP model is characterized by high dimensonality, weak topic differenatation and similar topic content.
+
+LDA Intertopic Distance Map & Top Relevant Keywords Per Topic (Sample 25)
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/f49cf930-b744-49db-825a-06f32f419fa3)
+
+HDP Intertopic Distance Map & Top Relevant Keywords Per Topic (Sample 25)
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/39abab97-cbfc-4d4d-a438-466df37e4160)
+
 
 
 
