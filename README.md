@@ -55,6 +55,12 @@ HDP Topic Keywords:
 HDP Representative Text narrowed down the list to keywords from 12 topics
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/b80c417e-9510-4e69-a20a-a18709bcc5ce)
 
+Further supporting the representative text table above, plotting the document wordcount against the total documents for each topic highlighted the same topic numbers for each model. For example, the three representative topics #2, #4 and #5 in the LDA model are shown in the graphs below to contain the highest number of total documents.
+
+LDA Model Outputs:
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/8da26b7a-6e15-45dd-ab3b-07f6d04a45d0)
+
+HDP Model Outputs:
 
 
 As supported by the literature review, the LDA model produced topics that were more clearly defined than that HDP model, as demonstrated by the Intertopic Distance Model Map When comparing the two maps (seen below), the results imply that the HDP model is characterized by high dimensonality, weak topic differenatation and similar topic content.
