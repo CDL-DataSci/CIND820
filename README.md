@@ -8,3 +8,6 @@ The literature review of past research has highlighted the importance of a using
 
 Original Data Source: https://www.ourcommons.ca/documentviewer/en/37-1/house/hansard-index
 
+## Step 2: Initial Results
+The initial results expored the LDA, HDP and BERTopic Models on a sample of the full dataset. 
+
