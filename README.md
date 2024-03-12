@@ -21,5 +21,8 @@ Additionally, the source data for initial results can be found in the following 
 * Dataset_BERTopic: the limited dataset used to run the BERTopic model
 
 Summary of Findings in Initial Results:
+As supported by the literature review, the LDA model produced topics that were more clearly defined than that HDP model. 
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/f49cf930-b744-49db-825a-06f32f419fa3)
+
 
 
