@@ -14,6 +14,10 @@ The literature review of past research has highlighted the importance of a using
 
 Original Data Source: https://www.ourcommons.ca/documentviewer/en/37-1/house/hansard-index
 
+Sample of DataFrame created from fulldata set:
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/392c7ed8-a231-4d98-a8ea-4a27298e69f5)
+
+
 ## Step 2: Initial Results
 The initial results expored the LDA, HDP and BERTopic Models on a sample of the full dataset. The initial results are divided between the following jupyter notebook files:
 * **Initial_Results_CreateSample**: documenting how two sample sizes were identified that randomly selected files from the full dataset
