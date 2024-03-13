@@ -12,6 +12,8 @@ With respect to the BERTopic model, processing limiations and capacity issues we
 ## Step 1: Literature Review
 The literature review of past research has highlighted the importance of a using a systematic approach to text mining techniques, the benefits of leveraging a combined topic model from LDA and TF-IDF, as well as considerations for evaluation of topic models and the validation of the labels for the extract topic. The literature review also helped to identify comparable alternatives to LDA that include HDP and the more recent BERTopic. While the literature review has identified possible advantages for these alternative topic models, there is a potential for these alternatives to be more computationally intensive and the performance of these different modeal will be explored in the final report. 
 
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/e1bdf761-6018-4b6a-9861-0f0a63f746a4)
+
 Original Data Source: https://www.ourcommons.ca/documentviewer/en/37-1/house/hansard-index
 
 Sample of DataFrame created from fulldata set:
