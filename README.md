@@ -35,6 +35,22 @@ Additionally, the source data for initial results can be found in the following 
 ### Summary of Findings in Initial Results:
 Leveraging the outcomes from the Literature Reivew and exploratory analysis of the dataset, it was determined that the ideal number of topics for the LDA model was 7. This value will be carried forward into the analysis of the sample size of 25 and 385 files in order to compare the LDA and HDP models. Contrasting with the HDP model, when training this algorithm on the dataset (sample 25), a total of 19 topics were identified and when training on the sample of 385, a total of 39 topics were found.
 
+Additionally, an n-folds cross validation was run against the representative sample (385 files) and the ideal number of topics for the LDA model was confirmed to be 7:
+
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/8107196b-ed1d-4965-b4b8-766e5b180c50)
+
+**Coherence Scores by Number of Topics:** 
+* Number of Topics: 2, Coherence Score: 0.2777207278487633
+* Number of Topics: 3, Coherence Score: 0.27948628535283787
+* Number of Topics: 4, Coherence Score: 0.3497679850116785
+* Number of Topics: 5, Coherence Score: 0.37398161141900993
+* Number of Topics: 6, Coherence Score: 0.36098889812859786
+* Number of Topics: 7, Coherence Score: 0.3949243102093841
+* Number of Topics: 8, Coherence Score: 0.3793170579177607
+* Number of Topics: 9, Coherence Score: 0.29408767522024126
+* Number of Topics: 10, Coherence Score: 0.3189270003203882
+
+
 Also improving on the literature review was updating the processing of the text mining outputs to allow for crossvalidation of a training and test set (80/20 split). The LDA model was further enhanced by updating the parameters to increase the number of passes over the corpus to 10 passes.
 
 **Coherance values of LDA and HDA models**
