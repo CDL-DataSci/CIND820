@@ -93,15 +93,12 @@ The BERTopic model was trained on the dataset without preprocessing and leverage
 
 ## Analysis Constraints & Limitations:
 
-The computing and processing resources required to model the Hansard debate records proved challenging, especially when running the BERTopic model. In order to complete the training of the BERTopic, 
+The computing and processing resources required to model the Hansard debate records proved challenging, especially when running the BERTopic model. In order to complete the training of the BERTopic, a virtual machine was leveraged inorder to access higher processing capacity (CPUs, RAM and GPU resources). 
 
-Challenges with running the BERTopic model have typically resulted in the jyputer notebook kernel warnings that the kernel is dead and will be restarted. Error may relate to the Apple M1 processor (8 cores) of the computer being used for analyssi and compability issues with not having ability to run the script in parallel through the GPU. Otherwise, it could be limitations of the memory and processing capacity of the laptop currently being utilized.
+Even with access to the virtual machine, the long processing times required to preprocess text, train the models and conduct analysis of coherenace values limited the extent of analysis conducted. Considerations for future research to incorporate bigrams and trigrams into the corpus of text to train the LDA and HDP models is just one example of additional steps that can be taken to improve model performance. 
 
-![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/0a6d7e2d-0f9e-4bb3-a316-84f2af2c78a6)
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/39fce3a5-6084-4071-9d97-7ed8bff134e4)
 
-Attempts to update and reinstall the python packages to resolve dependencies, such as transfomer package, through pip and conda have not been successful. Additionally, attempts to leverage the tensorflow package to be able to leverage the GPU in parallel to the CPU as a workaround for the Apple M1 chip have not yeilded resutls. 
-
-Next steps inlcude further attempts to resolve the error BERTopic kernel terminating permaturely while running on current laptop. Alternatives would be to source a Windows terminal with sufficient processor and memory capacity to determine if this will resolve the obstacle. 
-
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/3d80388d-6968-4030-a3a3-5afa07e5138a)
 
 
