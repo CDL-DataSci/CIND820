@@ -1,15 +1,17 @@
 # CIND820 - Big Data Analytics Project
 TMU CIND820 Capstone Project - Parliament of Canada Hansard Debate Records (2006 - 2023)
 
-This project is aims to explore what information can be gained through applying text mining and topic modeling approaches to the historical Hansard debate records from the Parliament of Canada. The identified dataset covers from 2006 to 2023 (39-1 Parliment to part of 44-1). The data set includes 1972 pdf files in total and collectively represent 155,385 pages.
+This project is aims to explore what information can be gained through applying text mining and topic modeling approaches to the historical Hansard debate records from the Parliament of Canada. The identified dataset covers from April 2006 to December 2023 (39-1 Parliment to part of 44-1), which is a period of time that covers several election cycles and two Prime Ministerss. The data set includes 1972 pdf files in total and collectively represent 155,385 pages and 128,933,818 words.
 
-The initial results of the comparative analysis between LDA and HDP models show that while HDP has greater flexibility in processing a corpus of text including not requiring defining total topics upfront, the outputs of the LDA model continue to produce topics that can be easily interpreted as distinct. However, the HDP model was able to identify a greater diversity of keywords within each topic that potentially would allow for a more nuanced assessment of changes in topic keywords across different timescales of either parliament sessions or calendar years. In terms of coherance values:
+The initial results of the comparative analysis between LDA and HDP models show that while HDP has greater flexibility in processing a corpus of text including not requiring defining total topics upfront, the outputs of the LDA model continue to produce individual topics that can be easily interpreted as distinct. However, the HDP model was able to identify a greater diversity of keywords that covered a higher proportion of documents that potentially would allow for a more nuanced assessment of changes in topic keywords across different timescales of either parliament sessions or calendar years. In terms of coherance values:
 * For the sample size of 25, the HDP model was able to produce higher result (0.410 for LDA and 0.458 for HDP)
 * For the sample size of 385, the LDA model was able to produce a higher result (0.701 for LDA and 0.315 for HDP)
+* For the full dataset of 1972 documents, the LDA model was able to produce a higher result (0.628 for LDA and 0.319 for HDP)
 
-With respect to the BERTopic model, processing limiations and capacity issues were encounterd which restricted assessing the performance of this model against that of LDA and HDP. The constrainst of utilizing this model for the initial results have been documented below.
+With respect to the BERTopic model, initially processing limiations and capacity issues were encounterd due to compatability with the computer being leveraged. However, the use of a virtual machine that could leverage cloud computing to run the script proved to be a successful solution to the high computational demands of the BERTopic model. While BERTopic was able to identify 7 topics within the corpus, the ability for BERTopic to process documents without preprocessing worked out to be a disadvantage in the context of Hansard debate records that contain jargon and laguage related to protocol and parliamentary etiquette. The outcomes of the BERTopic are shared below.
 
-## Step 1: Literature Review
+
+## Background: Literature Review
 The literature review of past research has highlighted the importance of a using a systematic approach to text mining techniques, the benefits of leveraging a combined topic model from LDA and TF-IDF, as well as considerations for evaluation of topic models and the validation of the labels for the extract topic. The literature review also helped to identify comparable alternatives to LDA that include HDP and the more recent BERTopic. While the literature review has identified possible advantages for these alternative topic models, there is a potential for these alternatives to be more computationally intensive and the performance of these different modeal will be explored in the final report. 
 
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/e1bdf761-6018-4b6a-9861-0f0a63f746a4)
@@ -20,18 +22,17 @@ Sample of DataFrame created from fulldata set:
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/392c7ed8-a231-4d98-a8ea-4a27298e69f5)
 
 
-## Step 2: Initial Results
-The initial results expored the LDA, HDP and BERTopic Models on a sample of the full dataset. The initial results are divided between the following jupyter notebook files:
+## Relevant Source Code: Exploratory Analysis and Final Results
+The the relevant files in this repository that have expored the LDA, HDP and BERTopic Models are referenced below. The files results are divided between "Initial Results" that assesed a representative sample of documents (s=385) as well as "Final Results" for analysis conducted on the full dataset:
 * **Initial_Results_CreateSample**: documenting how two sample sizes were identified that randomly selected files from the full dataset
 * **Initial_Results_HDP_LDA_Models**: Inital exploration of the algothrims for LDA and HDP topic models using a sample size of 25 files. The objectives were to test the general performance of the models in a time efficent manner.
 * **Initial_Results_HDP_LDA_Models_Sample385**: The same code was run a statistically significant sameple size of 385 files out of the full 1972 pdfs from the dataset.
-* **BERTopic_Model**: Initial assessment of the BERTopic model was limited due to the processing capacity and potential combatability conflicts with running the BERTopic on an Apple M1 processor.
+* **BERTopic_Model**: Initial assessment of the BERTopic model was limited due to the processing capacity and is a jupyter notebook that was run on a virtual machine. Some aspects of the script (e.g., pip install commands) have been included in the notebook due to the nature of running pyhton script on the virtual machine. 
 
 Additionally, the source data for initial results can be found in the following folders:
 * **Dataset_Sample**: 25 file sample that was leveraged by the LDA and HDP models
 * **Dataset_Sample_385**: the larger sample of 385 files that was leveraged by the LDA and HDP models
-* **Dataset_BERTopic**: the limited dataset used to run the BERTopic model
-
+* **Datasource**: the full set of documents collected from the Handsard archives.
 ### Summary of Findings in Initial Results:
 Leveraging the outcomes from the Literature Reivew and exploratory analysis of the dataset, it was determined that the ideal number of topics for the LDA model was 7. This value will be carried forward into the analysis of the sample size of 25 and 385 files in order to compare the LDA and HDP models. Contrasting with the HDP model, when training this algorithm on the dataset (sample 25), a total of 19 topics were identified and when training on the sample of 385, a total of 39 topics were found.
 
