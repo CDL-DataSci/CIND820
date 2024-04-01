@@ -85,7 +85,15 @@ LDA Intertopic Distance Map & Top Relevant Keywords Per Topic (Sample 385)
 HDP Intertopic Distance Map & Top Relevant Keywords Per Topic (Sameple 385)
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/7b90bfbf-93f1-484f-a2e1-dee1a58c6435)
 
-## Analysis Constraints:
+**BERTopic Model Outputs (s=385)**
+The BERTopic model was trained on the dataset without preprocessing and leveraged many of the default parameters. However, due to the nature of the Hansard debate records, the identified topics were dominated by the protocol jargon and parliamentary etiquette terms that were removed during the preprocessing stage for the LDA and HDP models. Further evaluation of the BERTopic Model may require some degree of preprocessing prior to running the model.
+
+<img width="635" alt="image" src="https://github.com/CDL-DataSci/CIND820/assets/160800059/c0d5a757-f85a-4f0d-8629-4970562473fb">
+<img width="468" alt="image" src="https://github.com/CDL-DataSci/CIND820/assets/160800059/8161be02-32cc-4819-9fb4-aaa1eea6d701">
+
+## Analysis Constraints & Limitations:
+
+The computing and processing resources required to model the Hansard debate records proved challenging, especially when running the BERTopic model. In order to complete the training of the BERTopic, 
 
 Challenges with running the BERTopic model have typically resulted in the jyputer notebook kernel warnings that the kernel is dead and will be restarted. Error may relate to the Apple M1 processor (8 cores) of the computer being used for analyssi and compability issues with not having ability to run the script in parallel through the GPU. Otherwise, it could be limitations of the memory and processing capacity of the laptop currently being utilized.
 
