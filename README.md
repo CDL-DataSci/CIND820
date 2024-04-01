@@ -42,10 +42,17 @@ Additionally, an assessement of coherance across a range of topic numbers (2-10 
 
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/8107196b-ed1d-4965-b4b8-766e5b180c50)
 
-## Model Performance
-**Coherance values of LDA and HDA models**
+## Model Performance - Coherence Values
 
+**Coherance values of LDA**
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/4f197193-900c-4cae-9ed4-73d080ec845c)
+
+** <img width="468" alt="image" src="https://github.com/CDL-DataSci/CIND820/assets/160800059/2fdf8eea-0366-4efb-9798-6f7e6dc2c7b3">
+
+**Coherance values of HDP model**
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/c28ad49b-f3a1-41c1-a5bd-d598fe67c911)
+
+<img width="738" alt="image" src="https://github.com/CDL-DataSci/CIND820/assets/160800059/066b36a9-0bd1-49b8-b070-17e7a931492c">
 
 The inital assessment of the model performance produced the following overal coherance values:
 * LDA had an overall coherance value of 0.410 (s=25) and 0.701 (s=385) for 7 topics
