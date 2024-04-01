@@ -35,12 +35,14 @@ Additionally, the source data for initial results can be found in the following 
 * **Dataset_Sample**: 25 file sample that was leveraged by the LDA and HDP models
 * **Dataset_Sample_385**: the larger sample of 385 files that was leveraged by the LDA and HDP models
 * **Datasource**: the full set of documents collected from the Handsard archives.
-### Summary of Findings in Initial Results:
-Leveraging the outcomes from the Literature Reivew and exploratory analysis of the dataset, it was determined that the ideal number of topics for the LDA model was 7. This value will be carried forward into the analysis of the sample size of 25 and 385 files in order to compare the LDA and HDP models. Contrasting with the HDP model, when training this algorithm on the dataset (sample 25), a total of 19 topics were identified and when training on the sample of 385, a total of 39 topics were found.
-
-Additionally, an assessement of coherance across a range of topic numbers (2-10 and 2-40) was run against the representative sample (385 files) and the ideal number of topics for the LDA model was confirmed to be 7:
+  
+### Preprocessing - Determining Total Topics for LDA Model:
+Leveraging the outcomes from the Literature Reivew and exploratory analysis of the dataset, it was determined that the ideal number of topics for the LDA model was 7. This value was carried forward into the analysis of representative same (s=385) and the full dataset (s=1972). 
+The total number of topics to use in the LDA was determined through an assessement of coherance across a range of topic numbers (2-10 and 2-40).
 
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/8107196b-ed1d-4965-b4b8-766e5b180c50)
+![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/84c39148-99ba-4aff-9d33-30a0dc137621)
+
 
 ## Model Performance - Coherence Values
 
@@ -57,48 +59,28 @@ The inital assessment of the model performance produced the following overal coh
 * HDP had an overall coherance value of 0.458 for 19 topics (s=25) and 0.315 for 39 topics (s=385)
 
 **Assessment of Topic Keywords**
-Reviewing the outputs for each identified topic highlighted the differences between LDA and HDP being able to identify clearly distinct topics. For example, at first review of the LDA topics, it is noted that there were a least two very distinct topics for s=25 and three topicis for s=385 out of the 7 identified, which was further confirmed when isolating for representative text.
-
-LDA Topic Keywords - Representative Text (s=25):
-![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/acebf3ac-7e8b-465f-8511-4cac1e5f7d2b)
+Reviewing the outputs for each identified topic highlighted the differences between LDA and HDP being able to identify clearly distinct topics. For example, at first review of the LDA topics, it is noted that there were a least three distinct topics out of 7 for s=385, which was further confirmed when isolating for representative text.
 
 LDA Topic Keywords - Representative Text (s=385)
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/ad7454d2-29e2-4aa6-a622-43de2a022905)
 
-Comparing with the HDP model, while there were more total topics (19 & 39), there were many keywords that were common across the different topics that makes it hard for a person to interpret the differences. 
-
-HDP Topic Keywords - Representative Text (s=25):
-![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/5f7ed2d1-5c94-46c2-9fea-76b0627f2c3c)
+Comparing with the HDP model, while there were more total topics, there were many keywords that were common across the different topics that makes it hard for a person to interpret the differences between each individual topic. However, collectively the identified keywords were found across a higher percentage of total documents in the dataset. 
 
 HDP Topic Keywords - Representative Text (s=385)
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/61f55e4e-3768-44f4-815d-173ae15d905d)
 
 Further supporting the representative text table above, plotting the document wordcount against the total documents for each topic highlighted the same topic numbers for each model. For example, the two representative topics #0 and #5 in the LDA model for s=25 and topics #0, #2 and #4 are shown in the graphs below to contain the highest number of total documents.
 
-LDA Model Outputs (s=25):
-![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/d50772ae-8d1d-49a7-ae9b-45f4b3bca712)
-
-LDA Model Outputs (s=385):
+**LDA Model Outputs (s=385):**
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/2a967bbc-e6bb-457a-9ff9-61a84d0630a0)
 
-HDP Model Outputs (s=25):
-![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/486299bf-a47f-4482-a52a-3d0aa2a94547)
-
-HDP Model Outputs (s=385):
+**HDP Model Outputs (s=385):**
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/f472fc2b-7729-4d73-9606-8b65f16e51e5)
 
-
-
-As supported by the literature review, the LDA model produced topics that were more clearly defined than that HDP model, as demonstrated by the Intertopic Distance Model Map When comparing the two maps (seen below), the results imply that the HDP model is characterized by high dimensonality, weak topic differenatation and similar topic content.
-
-LDA Intertopic Distance Map & Top Relevant Keywords Per Topic (Sample 25)
-![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/49bf0cd7-e962-4569-a811-c48fbfad6286)
+Further assessment of the LDA model which produced topics that were more clearly defined than that HDP model, as demonstrated by the Intertopic Distance Model Map When comparing the two maps (seen below). The results imply that the HDP model is characterized by high dimensonality, weak topic differenatation and similar topic content.
 
 LDA Intertopic Distance Map & Top Relevant Keywords Per Topic (Sample 385)
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/602e8fdb-f960-4726-9c22-f2411376ba1b)
-
-HDP Intertopic Distance Map & Top Relevant Keywords Per Topic (Sample 25)
-![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/4e18bf84-a103-40e6-a743-c0686942126e)
 
 HDP Intertopic Distance Map & Top Relevant Keywords Per Topic (Sameple 385)
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/7b90bfbf-93f1-484f-a2e1-dee1a58c6435)
