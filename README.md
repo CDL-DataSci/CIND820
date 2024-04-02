@@ -101,12 +101,3 @@ Even with access to the virtual machine, the long processing times required to p
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/39fce3a5-6084-4071-9d97-7ed8bff134e4)
 
 ![image](https://github.com/CDL-DataSci/CIND820/assets/160800059/3d80388d-6968-4030-a3a3-5afa07e5138a)
-
-
-=======
-# PyTorch
-
-Last updated: Sep 27th 2022
-
-This is the GitHub repository that acts as the default Workspace for Paperspace Gradient's PyTorch runtime.
->>>>>>> 86beb24e81552d6b37179c23419ff1f63192f700
